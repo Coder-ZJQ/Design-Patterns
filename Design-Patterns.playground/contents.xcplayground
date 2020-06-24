@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<playground version='6.0' target-platform='ios'>
+    <pages>
+        <page name='00.Contents'/>
+        <page name='01.Factory-Method'/>
+        <page name='02.Abstract-Factory'/>
+        <page name='03.Builder'/>
+        <page name='04.Prototype'/>
+        <page name='05.Singleton'/>
+        <page name='06.Adapter'/>
+        <page name='07.Bridge'/>
+        <page name='08.Composite'/>
+        <page name='09.Decorator'/>
+        <page name='10.Facade'/>
+        <page name='11.Flyweight'/>
+        <page name='12.Proxy'/>
+        <page name='13.Chain-Of-Responsibility'/>
+        <page name='14.Command'/>
+        <page name='15.Iterator'/>
+        <page name='16.Mediator'/>
+        <page name='17.Memento'/>
+        <page name='18.Observer'/>
+        <page name='19.State'/>
+        <page name='20.Strategy'/>
+        <page name='21.Template-Method'/>
+        <page name='22.Visitor'/>
+    </pages>
+</playground>
