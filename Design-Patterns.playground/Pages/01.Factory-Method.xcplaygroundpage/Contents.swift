@@ -4,7 +4,6 @@
  */
 
 import Foundation
-
 protocol Product {
     func doStuff()
 }

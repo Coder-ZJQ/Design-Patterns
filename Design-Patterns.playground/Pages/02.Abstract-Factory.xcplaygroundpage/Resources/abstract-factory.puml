@@ -1,0 +1,49 @@
+@startuml
+
+AbstractFactory <|.. ConcreteFactory1
+AbstractFactory <|.. ConcreteFactory2
+AbstractProductA <|.. ConcreteProductA1
+AbstractProductA <|.. ConcreteProductA2
+AbstractProductB <|.. ConcreteProductB1
+AbstractProductB <|.. ConcreteProductB2
+AbstractProductA <-- AbstractFactory
+AbstractProductB <-- AbstractFactory
+ConcreteProductA1 <-- ConcreteFactory1
+ConcreteProductB1 <-- ConcreteFactory1
+ConcreteProductA2 <-- ConcreteFactory2
+ConcreteProductB2 <-- ConcreteFactory2
+
+abstract class AbstractFactory << (P, #FF0000) protocol >> {
+  +createProductA() -> AbstractProductA
+  +createProductB() -> AbstractProductB
+}
+abstract class AbstractProductA << (P, #FF0000) protocol >> {
+    +doStuffA()
+}
+abstract class AbstractProductB << (P, #FF0000) protocol >> {
+    +doStuffB()
+}
+
+class ConcreteProductA1 {
+    +doStuffA()
+}
+class ConcreteProductB1 {
+    +doStuffB()
+}
+class ConcreteProductA2 {
+    +doStuffA()
+}
+class ConcreteProductB2 {
+    +doStuffB()
+}
+
+class ConcreteFactory1 {
+  +createProductA() -> ConcreteProductA1
+  +createProductB() -> ConcreteProductB1
+}
+class ConcreteFactory2 {
+  +createProductA() -> ConcreteProductA2
+  +createProductB() -> ConcreteProductB2
+}
+
+@enduml
